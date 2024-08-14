@@ -9,6 +9,8 @@
         padding: 0;
         margin: 0;
         background-color: #000000;
+        background-image: url(IND.jpg);
+
         overflow: hidden;
       }
 
@@ -136,24 +138,29 @@
           transform: rotate(360deg);
         }
       }
-
       #independenceDayText {
         position: absolute;
-        top: 20px;
-        left: 50%;
+        top: 70px;
+        left: 65%;
         transform: translateX(-50%);
         color: transparent;
         font-size: 40px;
-        background: linear-gradient(90deg, #fec200, #ffffff, #4cc701);
+        background: linear-gradient(
+          90deg,
+          #d49a00,
+          #aaaaaa,
+          #2e7d00
+        ); /* Adjusted gradient colors */
         background-clip: text;
         -webkit-background-clip: text;
         animation: fadeIn 3s ease-out, pulse 1.5s infinite;
+        text-emphasis-color: black;
       }
 
       #JaiHindText {
         position: relative;
-        top: 40px;
-        left: 60%;
+        top: 80px;
+        left: 80%;
         transform: translateX(-50%);
         color: indigo;
         font-size: 40px;
